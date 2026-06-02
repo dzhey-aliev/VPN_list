@@ -28,13 +28,14 @@ IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
 IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
 IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
 
-RULE-SET,https://raw.githubusercontent.com/dzhey-aliev/VPN_list/main/dist/opencck-selected-proxy.list,PROXY
 RULE-SET,https://raw.githubusercontent.com/dzhey-aliev/VPN_list/main/dist/opencck-russia-direct.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/dzhey-aliev/VPN_list/main/dist/opencck-selected-proxy.list,PROXY
 
 FINAL,DIRECT
 ```
 
-Порядок важен: сервисный `PROXY` список стоит выше российского `DIRECT` списка.
+Порядок важен: российский `DIRECT` список стоит выше сервисного `PROXY` списка.
+Если один и тот же IP попадет в оба списка, сработает первое совпадение, то есть `DIRECT`.
 
 ## Локальный запуск
 
