@@ -1,28 +1,40 @@
 # VPN list
 
-Автоматизация для Shadowrocket: репозиторий скачивает списки Antifilter и
+Автоматизация для Shadowrocket: репозиторий скачивает IP-списки OpenCCK и
 собирает два внешних `RULE-SET` файла.
 
 ## Готовые файлы
 
-- `dist/antifilter-domains.list` - домены в формате `DOMAIN-SUFFIX,<domain>`.
-- `dist/antifilter-community-ip.list` - IP-сети в формате `IP-CIDR,<cidr>,no-resolve`.
+- `dist/opencck-selected-proxy.list` - выбранные сервисы через VPN.
+- `dist/opencck-russia-direct.list` - российские IPv4-сети напрямую, без VPN.
+
+Оба файла имеют формат:
+
+```ini
+IP-CIDR,1.2.3.0/24,no-resolve
+```
+
+## Источники
+
+- Direct: `https://russia.iplist.opencck.org/?format=text&data=cidr4`
+- Proxy: `https://iplist.opencck.org/?format=text&data=cidr4&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com`
 
 ## Как подключить в Shadowrocket
 
-После публикации репозитория на GitHub замени `<user>` и `<repo>` на свои:
-
 ```ini
 [Rule]
-RULE-SET,https://raw.githubusercontent.com/<user>/<repo>/main/dist/antifilter-domains.list,PROXY
-RULE-SET,https://raw.githubusercontent.com/<user>/<repo>/main/dist/antifilter-community-ip.list,PROXY
-
 IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
 IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
 IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+
+RULE-SET,https://raw.githubusercontent.com/dzhey-aliev/VPN_list/main/dist/opencck-selected-proxy.list,PROXY
+RULE-SET,https://raw.githubusercontent.com/dzhey-aliev/VPN_list/main/dist/opencck-russia-direct.list,DIRECT
 
 FINAL,DIRECT
 ```
+
+Порядок важен: сервисный `PROXY` список стоит выше российского `DIRECT` списка.
 
 ## Локальный запуск
 

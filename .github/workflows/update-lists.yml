@@ -1,4 +1,4 @@
-name: Update Shadowrocket lists
+name: Update Shadowrocket IP lists
 
 on:
   workflow_dispatch:

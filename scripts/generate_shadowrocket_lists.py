@@ -7,17 +7,27 @@ import urllib.request
 from pathlib import Path
 
 
-DEFAULT_DOMAINS_URL = "https://community.antifilter.download/list/domains.lst"
-DEFAULT_IP_URL = "https://community.antifilter.download/list/community.lst"
+DEFAULT_DIRECT_URL = "https://russia.iplist.opencck.org/?format=text&data=cidr4"
+DEFAULT_PROXY_URL = (
+    "https://iplist.opencck.org/?format=text&data=cidr4"
+    "&site=youtube.com"
+    "&site=aistudio.google.com"
+    "&site=chatgpt.com"
+    "&site=claude.ai"
+    "&site=telegram.org"
+    "&site=whatsapp.com"
+    "&site=grok.com"
+    "&site=instagram.com"
+)
 DEFAULT_OUTPUT_DIR = Path("dist")
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Build Shadowrocket RULE-SET files from Antifilter lists."
+        description="Build Shadowrocket IP-only RULE-SET files from OpenCCK lists."
     )
-    parser.add_argument("--domains-url", default=DEFAULT_DOMAINS_URL)
-    parser.add_argument("--ip-url", default=DEFAULT_IP_URL)
+    parser.add_argument("--direct-url", default=DEFAULT_DIRECT_URL)
+    parser.add_argument("--proxy-url", default=DEFAULT_PROXY_URL)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     return parser.parse_args()
 
@@ -40,22 +50,6 @@ def iter_clean_lines(text: str):
         yield line
 
 
-def normalize_domain(line: str) -> str:
-    domain = line.split()[0].strip().strip(".").lower()
-    if domain.startswith("*."):
-        domain = domain[2:]
-    return domain
-
-
-def build_domain_rules(text: str) -> list[str]:
-    domains = {
-        domain
-        for domain in (normalize_domain(line) for line in iter_clean_lines(text))
-        if domain
-    }
-    return [f"DOMAIN-SUFFIX,{domain}" for domain in sorted(domains)]
-
-
 def parse_network(line: str) -> ipaddress.IPv4Network | ipaddress.IPv6Network:
     value = line.split()[0].strip()
     return ipaddress.ip_network(value, strict=False)
@@ -63,8 +57,9 @@ def parse_network(line: str) -> ipaddress.IPv4Network | ipaddress.IPv6Network:
 
 def build_ip_rules(text: str) -> list[str]:
     networks = {parse_network(line) for line in iter_clean_lines(text)}
+    collapsed_networks = ipaddress.collapse_addresses(networks)
     sorted_networks = sorted(
-        networks,
+        collapsed_networks,
         key=lambda network: (
             network.version,
             int(network.network_address),
@@ -79,10 +74,10 @@ def build_ip_rules(text: str) -> list[str]:
     return rules
 
 
-def write_rules(path: Path, source_url: str, rules: list[str]) -> None:
+def write_rules(path: Path, name: str, source_url: str, rules: list[str]) -> None:
     content = "\n".join(
         [
-            "# NAME: Antifilter Community",
+            f"# NAME: {name}",
             "# FORMAT: Shadowrocket RULE-SET",
             f"# SOURCE: {source_url}",
             f"# TOTAL: {len(rules)}",
@@ -95,27 +90,38 @@ def write_rules(path: Path, source_url: str, rules: list[str]) -> None:
     tmp_path.replace(path)
 
 
+def remove_legacy_files(output_dir: Path) -> None:
+    for filename in (
+        "antifilter-domains.list",
+        "antifilter-community-ip.list",
+    ):
+        path = output_dir / filename
+        if path.exists():
+            path.unlink()
+
+
 def main() -> int:
     args = parse_args()
     output_dir = args.output_dir
     output_dir.mkdir(parents=True, exist_ok=True)
+    remove_legacy_files(output_dir)
 
-    print(f"Fetching domains: {args.domains_url}")
-    domains_text = fetch_text(args.domains_url)
-    domain_rules = build_domain_rules(domains_text)
+    print(f"Fetching proxy IP networks: {args.proxy_url}")
+    proxy_text = fetch_text(args.proxy_url)
+    proxy_rules = build_ip_rules(proxy_text)
 
-    print(f"Fetching IP networks: {args.ip_url}")
-    ip_text = fetch_text(args.ip_url)
-    ip_rules = build_ip_rules(ip_text)
+    print(f"Fetching direct IP networks: {args.direct_url}")
+    direct_text = fetch_text(args.direct_url)
+    direct_rules = build_ip_rules(direct_text)
 
-    domains_path = output_dir / "antifilter-domains.list"
-    ip_path = output_dir / "antifilter-community-ip.list"
+    proxy_path = output_dir / "opencck-selected-proxy.list"
+    direct_path = output_dir / "opencck-russia-direct.list"
 
-    write_rules(domains_path, args.domains_url, domain_rules)
-    write_rules(ip_path, args.ip_url, ip_rules)
+    write_rules(proxy_path, "OpenCCK Selected Services Proxy", args.proxy_url, proxy_rules)
+    write_rules(direct_path, "OpenCCK Russia Direct", args.direct_url, direct_rules)
 
-    print(f"Wrote {domains_path} ({len(domain_rules)} rules)")
-    print(f"Wrote {ip_path} ({len(ip_rules)} rules)")
+    print(f"Wrote {proxy_path} ({len(proxy_rules)} rules)")
+    print(f"Wrote {direct_path} ({len(direct_rules)} rules)")
     return 0
 
 
