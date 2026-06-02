@@ -1,0 +1,38 @@
+name: Update Shadowrocket lists
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-lists:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Generate lists
+        run: python scripts/generate_shadowrocket_lists.py
+
+      - name: Commit changes
+        run: |
+          if [ -z "$(git status --short dist)" ]; then
+            echo "No list changes"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist
+          git commit -m "Update Shadowrocket lists"
+          git push
