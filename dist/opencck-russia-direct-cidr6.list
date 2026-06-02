@@ -1,0 +1,47 @@
+# NAME: OpenCCK Russia Direct cidr6
+# FORMAT: Shadowrocket RULE-SET
+# SOURCE: https://russia.iplist.opencck.org/?format=text&data=cidr6
+# TOTAL: 43
+IP-CIDR6,2001:678:5e0::/48,no-resolve
+IP-CIDR6,2001:4860::/32,no-resolve
+IP-CIDR6,2400:52e0::/32,no-resolve
+IP-CIDR6,2407:c080::/32,no-resolve
+IP-CIDR6,2600:9000::/28,no-resolve
+IP-CIDR6,2606:4700::/32,no-resolve
+IP-CIDR6,2606:50c0::/32,no-resolve
+IP-CIDR6,2620:100:a000::/44,no-resolve
+IP-CIDR6,2a00:d18::/32,no-resolve
+IP-CIDR6,2a00:1148::/32,no-resolve
+IP-CIDR6,2a00:1248:5001:4::/64,no-resolve
+IP-CIDR6,2a00:1450:4000::/37,no-resolve
+IP-CIDR6,2a00:1e48::/32,no-resolve
+IP-CIDR6,2a00:ab00::/29,no-resolve
+IP-CIDR6,2a00:b4c0::/32,no-resolve
+IP-CIDR6,2a00:f940:2::/48,no-resolve
+IP-CIDR6,2a01:620::/32,no-resolve
+IP-CIDR6,2a02:28::/29,no-resolve
+IP-CIDR6,2a02:2d8::/48,no-resolve
+IP-CIDR6,2a02:6b8::/29,no-resolve
+IP-CIDR6,2a02:2638::/32,no-resolve
+IP-CIDR6,2a02:2698::/29,no-resolve
+IP-CIDR6,2a02:e300::/32,no-resolve
+IP-CIDR6,2a03:720::/32,no-resolve
+IP-CIDR6,2a03:90c0::/32,no-resolve
+IP-CIDR6,2a03:d000:2000::/36,no-resolve
+IP-CIDR6,2a03:d000:4000::/36,no-resolve
+IP-CIDR6,2a03:d000:6000::/36,no-resolve
+IP-CIDR6,2a03:d000:7000::/38,no-resolve
+IP-CIDR6,2a03:d000:8400::/38,no-resolve
+IP-CIDR6,2a03:d002::/40,no-resolve
+IP-CIDR6,2a04:2e80:5::/48,no-resolve
+IP-CIDR6,2a06:98c1::/32,no-resolve
+IP-CIDR6,2a07:aa40::/29,no-resolve
+IP-CIDR6,2a0b:1447:20::/44,no-resolve
+IP-CIDR6,2a0d:d6c0::/29,no-resolve
+IP-CIDR6,2a0e:fd80::/48,no-resolve
+IP-CIDR6,2a11:27c0::/32,no-resolve
+IP-CIDR6,2a13:1ec0::/32,no-resolve
+IP-CIDR6,2a14:25c0::/29,no-resolve
+IP-CIDR6,2a14:48c5::/48,no-resolve
+IP-CIDR6,2a14:48c6::/48,no-resolve
+IP-CIDR6,2a14:b680::/48,no-resolve

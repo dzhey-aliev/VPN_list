@@ -1,23 +1,45 @@
 # VPN list
 
-Автоматизация для Shadowrocket: репозиторий скачивает IP-списки OpenCCK и
-собирает два внешних `RULE-SET` файла.
+Автоматизация для Shadowrocket: репозиторий скачивает списки OpenCCK и
+собирает внешние `RULE-SET` файлы для маршрутизации DIRECT/PROXY.
 
 ## Готовые файлы
 
-- `dist/opencck-selected-proxy.list` - выбранные сервисы через VPN.
-- `dist/opencck-russia-direct.list` - российские IPv4-сети напрямую, без VPN.
+Комбинированные файлы для подключения в Shadowrocket:
 
-Оба файла имеют формат:
+- `dist/opencck-russia-direct.list` - российские домены, IPv4 и IPv6 напрямую.
+- `dist/opencck-selected-proxy.list` - выбранные сервисы через VPN.
+
+Отдельные файлы по типам данных:
+
+- `dist/opencck-russia-direct-domains.list`
+- `dist/opencck-russia-direct-cidr4.list`
+- `dist/opencck-russia-direct-cidr6.list`
+- `dist/opencck-selected-proxy-domains.list`
+- `dist/opencck-selected-proxy-cidr4.list`
+- `dist/opencck-selected-proxy-cidr6.list`
+
+Форматы правил:
 
 ```ini
+DOMAIN-SUFFIX,example.com
 IP-CIDR,1.2.3.0/24,no-resolve
+IP-CIDR6,2001:db8::/32,no-resolve
 ```
 
 ## Источники
 
-- Direct: `https://russia.iplist.opencck.org/?format=text&data=cidr4`
-- Proxy: `https://iplist.opencck.org/?format=text&data=cidr4&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com`
+DIRECT:
+
+- `https://russia.iplist.opencck.org/?format=text&data=domains`
+- `https://russia.iplist.opencck.org/?format=text&data=cidr4`
+- `https://russia.iplist.opencck.org/?format=text&data=cidr6`
+
+PROXY:
+
+- `https://iplist.opencck.org/?format=text&data=domains&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com`
+- `https://iplist.opencck.org/?format=text&data=cidr4&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com`
+- `https://iplist.opencck.org/?format=text&data=cidr6&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com`
 
 ## Как подключить в Shadowrocket
 
@@ -35,7 +57,8 @@ FINAL,DIRECT
 ```
 
 Порядок важен: российский `DIRECT` список стоит выше сервисного `PROXY` списка.
-Если один и тот же IP попадет в оба списка, сработает первое совпадение, то есть `DIRECT`.
+Если один и тот же домен или IP попадет в оба списка, сработает первое совпадение,
+то есть `DIRECT`.
 
 ## Локальный запуск
 
