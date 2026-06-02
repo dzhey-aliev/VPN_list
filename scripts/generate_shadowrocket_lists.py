@@ -25,6 +25,8 @@ DEFAULT_OUTPUT_DIR = Path("dist")
 
 def opencck_url(host: str, data_type: str, sites: tuple[str, ...] = ()) -> str:
     query = [("format", "text"), ("data", data_type)]
+    if data_type == "domains":
+        query.append(("wildcard", "1"))
     query.extend(("site", site) for site in sites)
     return f"https://{host}/?{urllib.parse.urlencode(query)}"
 

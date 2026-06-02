@@ -31,13 +31,13 @@ IP-CIDR6,2001:db8::/32,no-resolve
 
 DIRECT:
 
-- `https://russia.iplist.opencck.org/?format=text&data=domains`
+- `https://russia.iplist.opencck.org/?format=text&data=domains&wildcard=1`
 - `https://russia.iplist.opencck.org/?format=text&data=cidr4`
 - `https://russia.iplist.opencck.org/?format=text&data=cidr6`
 
 PROXY:
 
-- `https://iplist.opencck.org/?format=text&data=domains&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com`
+- `https://iplist.opencck.org/?format=text&data=domains&wildcard=1&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com`
 - `https://iplist.opencck.org/?format=text&data=cidr4&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com`
 - `https://iplist.opencck.org/?format=text&data=cidr6&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com`
 
