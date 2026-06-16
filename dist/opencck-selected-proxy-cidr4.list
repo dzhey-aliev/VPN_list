@@ -1,7 +1,7 @@
 # NAME: OpenCCK Selected Services Proxy cidr4
 # FORMAT: Shadowrocket RULE-SET
 # SOURCE: https://iplist.opencck.org/?format=text&data=cidr4&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com
-# TOTAL: 1476
+# TOTAL: 1481
 IP-CIDR,1.9.0.0/16,no-resolve
 IP-CIDR,1.37.0.0/16,no-resolve
 IP-CIDR,1.38.0.0/16,no-resolve
@@ -13,6 +13,8 @@ IP-CIDR,3.33.221.48/32,no-resolve
 IP-CIDR,3.33.238.178/32,no-resolve
 IP-CIDR,3.33.252.61/32,no-resolve
 IP-CIDR,3.72.148.84/32,no-resolve
+IP-CIDR,3.78.3.234/32,no-resolve
+IP-CIDR,3.78.139.112/32,no-resolve
 IP-CIDR,3.82.82.17/32,no-resolve
 IP-CIDR,3.82.166.241/32,no-resolve
 IP-CIDR,3.83.211.61/32,no-resolve
@@ -117,9 +119,12 @@ IP-CIDR,18.154.0.0/15,no-resolve
 IP-CIDR,18.160.0.0/15,no-resolve
 IP-CIDR,18.164.0.0/15,no-resolve
 IP-CIDR,18.172.0.0/15,no-resolve
+IP-CIDR,18.184.48.115/32,no-resolve
 IP-CIDR,18.184.99.30/32,no-resolve
 IP-CIDR,18.184.243.31/32,no-resolve
 IP-CIDR,18.185.199.31/32,no-resolve
+IP-CIDR,18.193.171.24/32,no-resolve
+IP-CIDR,18.199.117.139/32,no-resolve
 IP-CIDR,18.204.0.0/16,no-resolve
 IP-CIDR,18.205.64.50/32,no-resolve
 IP-CIDR,18.205.209.28/32,no-resolve
