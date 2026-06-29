@@ -671,7 +671,7 @@ IP-CIDR,77.222.40.0/22,no-resolve
 IP-CIDR,77.222.60.0/22,no-resolve
 IP-CIDR,77.223.109.0/24,no-resolve
 IP-CIDR,77.223.111.0/24,no-resolve
-IP-CIDR,77.223.119.0/24,no-resolve
+IP-CIDR,77.223.118.0/23,no-resolve
 IP-CIDR,77.238.96.0/21,no-resolve
 IP-CIDR,77.244.211.0/24,no-resolve
 IP-CIDR,77.244.217.0/24,no-resolve
