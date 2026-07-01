@@ -3,7 +3,7 @@
 # SOURCE: https://iplist.opencck.org/?format=text&data=domains&wildcard=1&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com
 # SOURCE: https://iplist.opencck.org/?format=text&data=cidr4&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com
 # SOURCE: https://iplist.opencck.org/?format=text&data=cidr6&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com
-# TOTAL: 2399
+# TOTAL: 2406
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,cdn-telegram.org
@@ -14,6 +14,7 @@ DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-SUFFIX,comments.app
 DOMAIN-SUFFIX,contest.com
+DOMAIN-SUFFIX,dynect.net
 DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,facebook.net
 DOMAIN-SUFFIX,fbcdn.com
@@ -44,7 +45,10 @@ DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openai.fund
 DOMAIN-SUFFIX,openai.org
 DOMAIN-SUFFIX,quiz.directory
+DOMAIN-SUFFIX,r2---sn--n5pbvoj5caxu8-nboz.google
+DOMAIN-SUFFIX,r3---sn--h557snl6.googlevideo
 DOMAIN-SUFFIX,returnyoutubedislikeapi.com
+DOMAIN-SUFFIX,softlayer.com
 DOMAIN-SUFFIX,t.me
 DOMAIN-SUFFIX,tdesktop.com
 DOMAIN-SUFFIX,telega.one
@@ -1017,6 +1021,7 @@ IP-CIDR,107.22.100.5/32,no-resolve
 IP-CIDR,107.22.224.24/32,no-resolve
 IP-CIDR,107.23.0.0/16,no-resolve
 IP-CIDR,107.181.160.0/19,no-resolve
+IP-CIDR,108.59.160.0/20,no-resolve
 IP-CIDR,108.136.0.0/14,no-resolve
 IP-CIDR,108.156.0.0/14,no-resolve
 IP-CIDR,108.160.160.0/20,no-resolve
@@ -1513,6 +1518,7 @@ IP-CIDR,195.176.255.192/26,no-resolve
 IP-CIDR,195.187.0.0/16,no-resolve
 IP-CIDR,195.222.47.0/24,no-resolve
 IP-CIDR,195.229.0.0/16,no-resolve
+IP-CIDR,195.234.112.0/22,no-resolve
 IP-CIDR,195.239.44.0/24,no-resolve
 IP-CIDR,195.250.64.0/19,no-resolve
 IP-CIDR,196.1.128.0/17,no-resolve
@@ -2035,6 +2041,7 @@ IP-CIDR6,2407:ed00::/32,no-resolve
 IP-CIDR6,240a::/25,no-resolve
 IP-CIDR6,2600:800::/27,no-resolve
 IP-CIDR6,2600:1900::/28,no-resolve
+IP-CIDR6,2600:2000::/28,no-resolve
 IP-CIDR6,2600:2600::/28,no-resolve
 IP-CIDR6,2600:3400::/28,no-resolve
 IP-CIDR6,2600:5000::/28,no-resolve

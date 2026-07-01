@@ -1,7 +1,7 @@
 # NAME: OpenCCK Selected Services Proxy domains
 # FORMAT: Shadowrocket RULE-SET
 # SOURCE: https://iplist.opencck.org/?format=text&data=domains&wildcard=1&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com
-# TOTAL: 236
+# TOTAL: 240
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,cdn-telegram.org
@@ -12,6 +12,7 @@ DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-SUFFIX,comments.app
 DOMAIN-SUFFIX,contest.com
+DOMAIN-SUFFIX,dynect.net
 DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,facebook.net
 DOMAIN-SUFFIX,fbcdn.com
@@ -42,7 +43,10 @@ DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openai.fund
 DOMAIN-SUFFIX,openai.org
 DOMAIN-SUFFIX,quiz.directory
+DOMAIN-SUFFIX,r2---sn--n5pbvoj5caxu8-nboz.google
+DOMAIN-SUFFIX,r3---sn--h557snl6.googlevideo
 DOMAIN-SUFFIX,returnyoutubedislikeapi.com
+DOMAIN-SUFFIX,softlayer.com
 DOMAIN-SUFFIX,t.me
 DOMAIN-SUFFIX,tdesktop.com
 DOMAIN-SUFFIX,telega.one

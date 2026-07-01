@@ -1,7 +1,7 @@
 # NAME: OpenCCK Selected Services Proxy cidr6
 # FORMAT: Shadowrocket RULE-SET
 # SOURCE: https://iplist.opencck.org/?format=text&data=cidr6&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com
-# TOTAL: 672
+# TOTAL: 673
 IP-CIDR6,607:f8b0:4001:c0a::/64,no-resolve
 IP-CIDR6,2001::/32,no-resolve
 IP-CIDR6,2001:268::/32,no-resolve
@@ -306,6 +306,7 @@ IP-CIDR6,2407:ed00::/32,no-resolve
 IP-CIDR6,240a::/25,no-resolve
 IP-CIDR6,2600:800::/27,no-resolve
 IP-CIDR6,2600:1900::/28,no-resolve
+IP-CIDR6,2600:2000::/28,no-resolve
 IP-CIDR6,2600:2600::/28,no-resolve
 IP-CIDR6,2600:3400::/28,no-resolve
 IP-CIDR6,2600:5000::/28,no-resolve
