@@ -1,7 +1,7 @@
 # NAME: OpenCCK Russia Direct domains
 # FORMAT: Shadowrocket RULE-SET
 # SOURCE: https://russia.iplist.opencck.org/?format=text&data=domains&wildcard=1
-# TOTAL: 249
+# TOTAL: 250
 DOMAIN-SUFFIX,2gis.com
 DOMAIN-SUFFIX,2gis.ru
 DOMAIN-SUFFIX,5ka.ru
@@ -125,6 +125,7 @@ DOMAIN-SUFFIX,tenderplan.ru
 DOMAIN-SUFFIX,tensor.ru
 DOMAIN-SUFFIX,tetrika-school.ru
 DOMAIN-SUFFIX,tinkoff.ru
+DOMAIN-SUFFIX,twinby.ru
 DOMAIN-SUFFIX,uchi.ru
 DOMAIN-SUFFIX,userapi.com
 DOMAIN-SUFFIX,video-yandex.ru
