@@ -3,7 +3,7 @@
 # SOURCE: https://russia.iplist.opencck.org/?format=text&data=domains&wildcard=1
 # SOURCE: https://russia.iplist.opencck.org/?format=text&data=cidr4
 # SOURCE: https://russia.iplist.opencck.org/?format=text&data=cidr6
-# TOTAL: 1609
+# TOTAL: 1615
 DOMAIN-SUFFIX,2gis.com
 DOMAIN-SUFFIX,2gis.ru
 DOMAIN-SUFFIX,5ka.ru
@@ -324,7 +324,7 @@ IP-CIDR,15.160.106.203/32,no-resolve
 IP-CIDR,15.161.34.42/32,no-resolve
 IP-CIDR,15.197.162.9/32,no-resolve
 IP-CIDR,16.16.119.222/32,no-resolve
-IP-CIDR,18.66.0.0/16,no-resolve
+IP-CIDR,18.66.0.0/15,no-resolve
 IP-CIDR,18.118.238.243/32,no-resolve
 IP-CIDR,18.130.88.160/32,no-resolve
 IP-CIDR,18.132.124.144/32,no-resolve
@@ -336,6 +336,7 @@ IP-CIDR,18.188.220.34/32,no-resolve
 IP-CIDR,18.196.176.208/32,no-resolve
 IP-CIDR,18.202.8.75/32,no-resolve
 IP-CIDR,18.204.27.86/32,no-resolve
+IP-CIDR,18.208.124.7/32,no-resolve
 IP-CIDR,18.211.166.153/32,no-resolve
 IP-CIDR,18.219.61.107/32,no-resolve
 IP-CIDR,18.228.217.251/32,no-resolve
@@ -475,6 +476,7 @@ IP-CIDR,46.29.118.0/24,no-resolve
 IP-CIDR,46.38.48.0/21,no-resolve
 IP-CIDR,46.42.185.0/24,no-resolve
 IP-CIDR,46.42.186.0/23,no-resolve
+IP-CIDR,46.42.188.0/24,no-resolve
 IP-CIDR,46.42.191.0/24,no-resolve
 IP-CIDR,46.51.128.0/18,no-resolve
 IP-CIDR,46.61.212.0/22,no-resolve
@@ -845,6 +847,7 @@ IP-CIDR,87.242.120.0/21,no-resolve
 IP-CIDR,87.245.154.0/24,no-resolve
 IP-CIDR,87.245.179.64/26,no-resolve
 IP-CIDR,87.250.224.0/19,no-resolve
+IP-CIDR,88.210.36.0/24,no-resolve
 IP-CIDR,88.214.34.0/24,no-resolve
 IP-CIDR,88.217.133.32/28,no-resolve
 IP-CIDR,88.221.92.0/23,no-resolve
@@ -1146,6 +1149,7 @@ IP-CIDR,172.67.71.214/32,no-resolve
 IP-CIDR,172.67.73.141/32,no-resolve
 IP-CIDR,172.67.140.84/32,no-resolve
 IP-CIDR,172.104.229.73/32,no-resolve
+IP-CIDR,172.208.0.0/13,no-resolve
 IP-CIDR,172.217.16.147/32,no-resolve
 IP-CIDR,172.217.17.0/24,no-resolve
 IP-CIDR,172.217.18.0/23,no-resolve
@@ -1530,6 +1534,7 @@ IP-CIDR,216.58.211.19/32,no-resolve
 IP-CIDR,216.58.212.0/24,no-resolve
 IP-CIDR,216.58.213.115/32,no-resolve
 IP-CIDR,216.58.214.147/32,no-resolve
+IP-CIDR,216.152.144.0/20,no-resolve
 IP-CIDR,216.198.53.2/32,no-resolve
 IP-CIDR,216.198.54.2/32,no-resolve
 IP-CIDR,216.198.79.3/32,no-resolve
@@ -1569,6 +1574,7 @@ IP-CIDR,217.118.68.0/22,no-resolve
 IP-CIDR,217.118.80.0/21,no-resolve
 IP-CIDR,217.172.25.0/24,no-resolve
 IP-CIDR,217.175.128.0/19,no-resolve
+IP-CIDR,217.195.219.0/24,no-resolve
 IP-CIDR,217.198.92.0/24,no-resolve
 IP-CIDR6,2001:678:5e0::/48,no-resolve
 IP-CIDR6,2001:4860::/32,no-resolve
