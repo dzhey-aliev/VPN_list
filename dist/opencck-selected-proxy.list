@@ -472,7 +472,7 @@ IP-CIDR,34.238.0.0/16,no-resolve
 IP-CIDR,34.239.3.155/32,no-resolve
 IP-CIDR,34.239.215.45/32,no-resolve
 IP-CIDR,34.239.234.187/32,no-resolve
-IP-CIDR,35.152.0.0/13,no-resolve
+IP-CIDR,35.159.7.174/32,no-resolve
 IP-CIDR,35.160.0.0/12,no-resolve
 IP-CIDR,35.184.0.0/13,no-resolve
 IP-CIDR,35.224.0.0/12,no-resolve
