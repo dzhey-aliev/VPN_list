@@ -1,7 +1,7 @@
 # NAME: OpenCCK Russia Direct cidr6
 # FORMAT: Shadowrocket RULE-SET
 # SOURCE: https://russia.iplist.opencck.org/?format=text&data=cidr6
-# TOTAL: 44
+# TOTAL: 45
 IP-CIDR6,2001:678:5e0::/48,no-resolve
 IP-CIDR6,2001:4860::/32,no-resolve
 IP-CIDR6,2400:52e0::/32,no-resolve
@@ -19,6 +19,7 @@ IP-CIDR6,2a00:1e48::/32,no-resolve
 IP-CIDR6,2a00:ab00::/29,no-resolve
 IP-CIDR6,2a00:b4c0::/32,no-resolve
 IP-CIDR6,2a00:f940:2::/48,no-resolve
+IP-CIDR6,2a00:f940:4::/48,no-resolve
 IP-CIDR6,2a01:620::/32,no-resolve
 IP-CIDR6,2a02:28::/29,no-resolve
 IP-CIDR6,2a02:2d8::/48,no-resolve
