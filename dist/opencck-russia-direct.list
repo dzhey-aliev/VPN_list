@@ -3,7 +3,7 @@
 # SOURCE: https://russia.iplist.opencck.org/?format=text&data=domains&wildcard=1
 # SOURCE: https://russia.iplist.opencck.org/?format=text&data=cidr4
 # SOURCE: https://russia.iplist.opencck.org/?format=text&data=cidr6
-# TOTAL: 1524
+# TOTAL: 1530
 DOMAIN-SUFFIX,2gis.com
 DOMAIN-SUFFIX,2gis.ru
 DOMAIN-SUFFIX,5ka.ru
@@ -322,6 +322,7 @@ IP-CIDR,13.246.203.33/32,no-resolve
 IP-CIDR,13.248.148.104/32,no-resolve
 IP-CIDR,13.248.169.48/32,no-resolve
 IP-CIDR,13.248.238.56/32,no-resolve
+IP-CIDR,14.0.0.0/10,no-resolve
 IP-CIDR,15.160.106.203/32,no-resolve
 IP-CIDR,15.161.34.42/32,no-resolve
 IP-CIDR,15.197.162.9/32,no-resolve
@@ -1042,6 +1043,8 @@ IP-CIDR,155.212.0.0/16,no-resolve
 IP-CIDR,158.160.0.0/16,no-resolve
 IP-CIDR,159.138.0.0/16,no-resolve
 IP-CIDR,162.159.140.159/32,no-resolve
+IP-CIDR,163.171.156.0/24,no-resolve
+IP-CIDR,163.171.242.0/24,no-resolve
 IP-CIDR,166.117.63.229/32,no-resolve
 IP-CIDR,166.117.117.208/32,no-resolve
 IP-CIDR,166.117.189.223/32,no-resolve
@@ -1491,6 +1494,7 @@ IP-CIDR6,2407:c080::/32,no-resolve
 IP-CIDR6,2600:9000::/28,no-resolve
 IP-CIDR6,2606:4700::/32,no-resolve
 IP-CIDR6,2606:50c0::/32,no-resolve
+IP-CIDR6,2607:3f40::/32,no-resolve
 IP-CIDR6,2620:100:a000::/44,no-resolve
 IP-CIDR6,2a00:d18::/32,no-resolve
 IP-CIDR6,2a00:1148::/32,no-resolve
@@ -1502,6 +1506,8 @@ IP-CIDR6,2a00:b4c0::/32,no-resolve
 IP-CIDR6,2a00:f940:2::/48,no-resolve
 IP-CIDR6,2a00:f940:4::/48,no-resolve
 IP-CIDR6,2a01:620::/32,no-resolve
+IP-CIDR6,2a01:53c0:ff02:ffff::/64,no-resolve
+IP-CIDR6,2a01:53c0:ff0f::/64,no-resolve
 IP-CIDR6,2a02:28::/29,no-resolve
 IP-CIDR6,2a02:2d8::/48,no-resolve
 IP-CIDR6,2a02:6b8::/29,no-resolve
