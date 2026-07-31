@@ -1,7 +1,7 @@
 # NAME: OpenCCK Russia Direct cidr4
 # FORMAT: Shadowrocket RULE-SET
 # SOURCE: https://russia.iplist.opencck.org/?format=text&data=cidr4
-# TOTAL: 1232
+# TOTAL: 1233
 IP-CIDR,1.0.0.1/32,no-resolve
 IP-CIDR,2.16.0.0/13,no-resolve
 IP-CIDR,2.56.240.0/23,no-resolve
@@ -434,6 +434,7 @@ IP-CIDR,83.242.181.224/28,no-resolve
 IP-CIDR,84.17.59.112/28,no-resolve
 IP-CIDR,84.47.172.0/24,no-resolve
 IP-CIDR,84.53.236.0/22,no-resolve
+IP-CIDR,84.54.31.0/24,no-resolve
 IP-CIDR,84.201.128.33/32,no-resolve
 IP-CIDR,84.201.129.82/32,no-resolve
 IP-CIDR,84.201.129.177/32,no-resolve
