@@ -3,17 +3,26 @@
 # SOURCE: https://iplist.opencck.org/?format=text&data=domains&wildcard=1&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com
 # SOURCE: https://iplist.opencck.org/?format=text&data=cidr4&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com
 # SOURCE: https://iplist.opencck.org/?format=text&data=cidr6&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com
-# TOTAL: 2435
+# TOTAL: 2453
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,cdn-telegram.org
 DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.app
 DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claude.new
+DOMAIN-SUFFIX,claude.site
+DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN-SUFFIX,claudemcpcontent.com
+DOMAIN-SUFFIX,claudepages.dev
+DOMAIN-SUFFIX,claudestudio.com
 DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-SUFFIX,comments.app
 DOMAIN-SUFFIX,contest.com
+DOMAIN-SUFFIX,datadoghq.com
 DOMAIN-SUFFIX,dynect.net
 DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,facebook.net
@@ -39,6 +48,10 @@ DOMAIN-SUFFIX,intercomassets.com
 DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,live.net
 DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,modelcontextprotocol.com
+DOMAIN-SUFFIX,modelcontextprotocol.io
+DOMAIN-SUFFIX,modelcontextprotocol.net
+DOMAIN-SUFFIX,modelcontextprotocol.org
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.com
@@ -426,8 +439,11 @@ IP-CIDR,31.145.0.0/16,no-resolve
 IP-CIDR,32.192.0.0/12,no-resolve
 IP-CIDR,34.8.0.0/13,no-resolve
 IP-CIDR,34.32.0.0/11,no-resolve
+IP-CIDR,34.95.86.89/32,no-resolve
 IP-CIDR,34.98.127.226/32,no-resolve
 IP-CIDR,34.102.213.72/32,no-resolve
+IP-CIDR,34.120.108.227/32,no-resolve
+IP-CIDR,34.123.83.248/32,no-resolve
 IP-CIDR,34.128.0.0/10,no-resolve
 IP-CIDR,34.192.0.0/15,no-resolve
 IP-CIDR,34.194.24.249/32,no-resolve
@@ -773,6 +789,7 @@ IP-CIDR,74.125.206.0/24,no-resolve
 IP-CIDR,75.98.144.0/20,no-resolve
 IP-CIDR,75.101.128.0/17,no-resolve
 IP-CIDR,75.126.0.0/16,no-resolve
+IP-CIDR,76.76.21.0/24,no-resolve
 IP-CIDR,76.223.112.12/32,no-resolve
 IP-CIDR,77.37.252.0/23,no-resolve
 IP-CIDR,77.52.0.0/24,no-resolve
@@ -1139,6 +1156,7 @@ IP-CIDR,132.245.0.0/16,no-resolve
 IP-CIDR,132.255.0.0/16,no-resolve
 IP-CIDR,134.19.216.34/32,no-resolve
 IP-CIDR,136.22.128.0/19,no-resolve
+IP-CIDR,136.112.0.0/12,no-resolve
 IP-CIDR,137.59.16.0/20,no-resolve
 IP-CIDR,137.59.32.0/20,no-resolve
 IP-CIDR,137.59.64.0/18,no-resolve
