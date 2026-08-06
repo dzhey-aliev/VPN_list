@@ -1,7 +1,7 @@
 # NAME: OpenCCK Russia Direct cidr4
 # FORMAT: Shadowrocket RULE-SET
 # SOURCE: https://russia.iplist.opencck.org/?format=text&data=cidr4
-# TOTAL: 1343
+# TOTAL: 1347
 IP-CIDR,1.0.0.1/32,no-resolve
 IP-CIDR,2.16.0.0/13,no-resolve
 IP-CIDR,2.56.240.0/23,no-resolve
@@ -393,6 +393,7 @@ IP-CIDR,66.33.60.129/32,no-resolve
 IP-CIDR,66.33.60.130/32,no-resolve
 IP-CIDR,66.33.60.193/32,no-resolve
 IP-CIDR,66.33.60.194/32,no-resolve
+IP-CIDR,66.102.0.0/20,no-resolve
 IP-CIDR,67.207.64.0/19,no-resolve
 IP-CIDR,74.119.117.62/32,no-resolve
 IP-CIDR,74.119.118.100/32,no-resolve
@@ -881,6 +882,7 @@ IP-CIDR,134.19.213.0/24,no-resolve
 IP-CIDR,135.106.0.0/16,no-resolve
 IP-CIDR,136.243.132.2/32,no-resolve
 IP-CIDR,137.117.0.0/16,no-resolve
+IP-CIDR,138.113.0.0/16,no-resolve
 IP-CIDR,138.199.24.219/32,no-resolve
 IP-CIDR,138.199.46.0/24,no-resolve
 IP-CIDR,139.28.28.0/22,no-resolve
@@ -902,6 +904,7 @@ IP-CIDR,158.160.0.0/16,no-resolve
 IP-CIDR,159.138.0.0/16,no-resolve
 IP-CIDR,161.104.0.0/15,no-resolve
 IP-CIDR,162.159.140.159/32,no-resolve
+IP-CIDR,163.171.147.0/24,no-resolve
 IP-CIDR,163.171.156.0/24,no-resolve
 IP-CIDR,163.171.242.0/24,no-resolve
 IP-CIDR,166.117.63.229/32,no-resolve
@@ -1096,6 +1099,7 @@ IP-CIDR,185.231.50.0/23,no-resolve
 IP-CIDR,185.236.211.0/24,no-resolve
 IP-CIDR,185.242.16.0/22,no-resolve
 IP-CIDR,185.247.194.0/23,no-resolve
+IP-CIDR,185.249.133.0/24,no-resolve
 IP-CIDR,185.253.21.0/24,no-resolve
 IP-CIDR,186.2.165.103/32,no-resolve
 IP-CIDR,188.0.150.0/24,no-resolve
