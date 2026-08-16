@@ -3,7 +3,7 @@
 # SOURCE: https://iplist.opencck.org/?format=text&data=domains&wildcard=1&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com
 # SOURCE: https://iplist.opencck.org/?format=text&data=cidr4&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com
 # SOURCE: https://iplist.opencck.org/?format=text&data=cidr6&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com
-# TOTAL: 2453
+# TOTAL: 2454
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,cdn-telegram.org
@@ -382,6 +382,7 @@ IP-CIDR,18.184.0.0/16,no-resolve
 IP-CIDR,18.185.199.31/32,no-resolve
 IP-CIDR,18.193.171.24/32,no-resolve
 IP-CIDR,18.197.213.146/32,no-resolve
+IP-CIDR,18.198.227.74/32,no-resolve
 IP-CIDR,18.199.117.139/32,no-resolve
 IP-CIDR,18.204.0.0/16,no-resolve
 IP-CIDR,18.205.64.50/32,no-resolve
