@@ -3,7 +3,7 @@
 # SOURCE: https://russia.iplist.opencck.org/?format=text&data=domains&wildcard=1
 # SOURCE: https://russia.iplist.opencck.org/?format=text&data=cidr4
 # SOURCE: https://russia.iplist.opencck.org/?format=text&data=cidr6
-# TOTAL: 1649
+# TOTAL: 1658
 DOMAIN-SUFFIX,2gis.com
 DOMAIN-SUFFIX,2gis.ru
 DOMAIN-SUFFIX,5ka.ru
@@ -648,6 +648,7 @@ IP-CIDR,66.33.60.193/32,no-resolve
 IP-CIDR,66.33.60.194/32,no-resolve
 IP-CIDR,66.102.0.0/20,no-resolve
 IP-CIDR,67.207.64.0/19,no-resolve
+IP-CIDR,72.246.0.0/15,no-resolve
 IP-CIDR,74.119.117.62/32,no-resolve
 IP-CIDR,74.119.118.100/32,no-resolve
 IP-CIDR,74.125.29.121/32,no-resolve
@@ -1124,7 +1125,12 @@ IP-CIDR,109.120.190.0/23,no-resolve
 IP-CIDR,109.172.4.0/22,no-resolve
 IP-CIDR,109.172.112.0/22,no-resolve
 IP-CIDR,109.207.0.0/20,no-resolve
-IP-CIDR,109.238.88.0/22,no-resolve
+IP-CIDR,109.238.88.0/24,no-resolve
+IP-CIDR,109.238.90.45/32,no-resolve
+IP-CIDR,109.238.90.119/32,no-resolve
+IP-CIDR,109.238.90.137/32,no-resolve
+IP-CIDR,109.238.90.201/32,no-resolve
+IP-CIDR,109.238.90.239/32,no-resolve
 IP-CIDR,111.88.144.0/20,no-resolve
 IP-CIDR,111.88.240.0/20,no-resolve
 IP-CIDR,128.140.168.201/32,no-resolve
@@ -1155,7 +1161,10 @@ IP-CIDR,155.212.223.69/32,no-resolve
 IP-CIDR,155.212.234.0/24,no-resolve
 IP-CIDR,155.212.235.102/32,no-resolve
 IP-CIDR,158.160.0.0/16,no-resolve
-IP-CIDR,159.138.0.0/16,no-resolve
+IP-CIDR,159.138.197.0/24,no-resolve
+IP-CIDR,159.138.205.156/32,no-resolve
+IP-CIDR,159.138.206.133/32,no-resolve
+IP-CIDR,159.138.207.114/32,no-resolve
 IP-CIDR,161.104.0.0/15,no-resolve
 IP-CIDR,162.159.140.159/32,no-resolve
 IP-CIDR,163.171.147.0/24,no-resolve
