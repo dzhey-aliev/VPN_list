@@ -1104,7 +1104,7 @@ IP-CIDR,104.81.0.0/16,no-resolve
 IP-CIDR,104.83.0.0/16,no-resolve
 IP-CIDR,104.84.0.0/16,no-resolve
 IP-CIDR,104.94.0.0/16,no-resolve
-IP-CIDR,104.109.250.124/32,no-resolve
+IP-CIDR,104.109.0.0/16,no-resolve
 IP-CIDR,104.110.0.0/16,no-resolve
 IP-CIDR,104.115.0.0/16,no-resolve
 IP-CIDR,104.117.0.0/16,no-resolve
