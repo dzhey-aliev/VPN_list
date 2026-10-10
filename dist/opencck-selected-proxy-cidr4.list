@@ -1,7 +1,7 @@
 # NAME: OpenCCK Selected Services Proxy cidr4
 # FORMAT: Shadowrocket RULE-SET
 # SOURCE: https://iplist.opencck.org/?format=text&data=cidr4&site=youtube.com&site=aistudio.google.com&site=chatgpt.com&site=claude.ai&site=telegram.org&site=whatsapp.com&site=grok.com&site=instagram.com
-# TOTAL: 1538
+# TOTAL: 1539
 IP-CIDR,1.9.0.0/16,no-resolve
 IP-CIDR,1.37.0.0/16,no-resolve
 IP-CIDR,1.38.0.0/16,no-resolve
@@ -1108,6 +1108,7 @@ IP-CIDR,173.194.28.0/23,no-resolve
 IP-CIDR,173.194.31.0/24,no-resolve
 IP-CIDR,173.194.40.94/32,no-resolve
 IP-CIDR,173.194.41.94/32,no-resolve
+IP-CIDR,173.194.42.94/32,no-resolve
 IP-CIDR,173.194.43.94/32,no-resolve
 IP-CIDR,173.194.44.94/32,no-resolve
 IP-CIDR,173.194.45.94/32,no-resolve
