@@ -3,7 +3,7 @@
 # SOURCE: https://russia.iplist.opencck.org/?format=text&data=domains&wildcard=1
 # SOURCE: https://russia.iplist.opencck.org/?format=text&data=cidr4
 # SOURCE: https://russia.iplist.opencck.org/?format=text&data=cidr6
-# TOTAL: 1621
+# TOTAL: 1622
 DOMAIN-SUFFIX,2gis.com
 DOMAIN-SUFFIX,2gis.ru
 DOMAIN-SUFFIX,5ka.ru
@@ -340,6 +340,7 @@ IP-CIDR,18.153.180.74/32,no-resolve
 IP-CIDR,18.156.50.44/32,no-resolve
 IP-CIDR,18.165.0.0/16,no-resolve
 IP-CIDR,18.171.43.185/32,no-resolve
+IP-CIDR,18.173.0.0/16,no-resolve
 IP-CIDR,18.188.220.34/32,no-resolve
 IP-CIDR,18.196.176.208/32,no-resolve
 IP-CIDR,18.202.8.75/32,no-resolve
