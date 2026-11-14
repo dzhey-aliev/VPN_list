@@ -101,7 +101,7 @@ IP-CIDR,18.219.61.107/32,no-resolve
 IP-CIDR,18.228.217.251/32,no-resolve
 IP-CIDR,18.230.79.22/32,no-resolve
 IP-CIDR,18.239.0.0/16,no-resolve
-IP-CIDR,18.244.0.0/16,no-resolve
+IP-CIDR,18.244.0.0/15,no-resolve
 IP-CIDR,20.52.179.137/32,no-resolve
 IP-CIDR,20.237.4.168/32,no-resolve
 IP-CIDR,23.0.0.0/15,no-resolve
